@@ -8,16 +8,19 @@ requires = [
 
 setup(
     name='mailcatcher',
-    version='0.1.0',
+    version='0.1.6',
     description='Simple mailcatcher client for Python.',
-    # url='https://github.com/kamiazya/py-mailcatcher',
+    url='https://github.com/kamiazya/py-mailcatcher',
     author='kamiazya',
     author_email='yuki@kamiazya.tech',
     license='MIT',
     keywords='mailcatcher development rx',
-    packages=[
+    py_modules=[
         'mailcatcher',
     ],
+    package_dir={
+        '': 'src',
+    },
     install_requires=requires,
     classifiers=[
         'Programming Language :: Python :: 3.6',

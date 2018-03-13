@@ -1,10 +1,10 @@
-.PHPNY: build publish deps
+.PHONY: build publish deps
 
 build:
 	python3 setup.py bdist_wheel
 
 publish:
-	twine upload dist/*
+	twine upload --skip-existing dist/*
 
 deps:
 	pip3 install wheel
